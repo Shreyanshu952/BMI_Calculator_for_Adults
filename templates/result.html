@@ -1,0 +1,22 @@
+<html>
+    {% if Age >= 20 %}
+
+    {%if results < 18.5 %}
+    <h3> The BMI of the person is {{results}} and Weights status is <bold>UNDERWEIGHT</bold>.</h3>
+
+    {%elif results >=18.5 and results < 24.9%}
+    <h3> The BMI of the person is {{results}} and Weights status is <bold>NORMAL</bold>.</h3>
+
+    {%elif results >=25 and results < 29.9%}
+    <h3> The BMI of the person is {{results}} and Weights status is <bold>OVERWEIGHT</bold>.</h3>
+
+    {%else%}
+    <h3> The BMI of the person is {{results}} and Weights status is <bold>NORMAL</bold>.</h3>
+
+    {%endif%}
+
+    {%else%}
+    <h3>Sorry! This calculator supports only for adults</h3>
+
+    {%endif%}
+</html>
